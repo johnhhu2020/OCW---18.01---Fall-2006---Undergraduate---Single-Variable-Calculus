@@ -1,0 +1,15 @@
+wget -r -H -nc -np -nH --cut-dirs=1 -e robots=off -l1 -i ./urls.txt -B 'http://archive.org/download/'
+
+
+
+wget 
+-r(recursive) 
+-H(foreign host when recursive) 
+-nc(no clobber, not over-writting files) 
+-np(no parent) 
+-nH(no host directories) 
+--cut-dirs=1(Ignore number directory components) 
+-e robots=off(ignore robots.txt for that domain, search engine use it) 
+-l1 
+-i(input file) ./itemlist.txt 
+-B(base url) 'http://archive.org/download/'
